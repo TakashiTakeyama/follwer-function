@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <header>
+    <li><%= link_to 'ユーザー一覧', users_path if logged_in? %></li>
+  </header>
   <head>
     <title>FollwerFunction</title>
     <%= csrf_meta_tags %>
